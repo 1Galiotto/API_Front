@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listar Compras</title>
+    <script src="/js/compraListar.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <nav>
+        <h1>Listar Compras</h1>
+            <a href="index.html" class="active">Início</a>
+            <a href="produtoCadastrar.html">Cadastrar Produto</a>
+            <a href="produtoListar.html">Listar Produtos</a>
+            <a href="produtoAtualizar.html">Atualizar Produto</a>
+            <a href="produtoApagar.html">Apagar Produto</a>
+            <a href="usuarioCadastrar.html">Cadastrar Usuário</a>
+            <a href="usuarioListar.html">Listar Usuários</a>
+            <a href="usuarioAtualizar.html">Atualizar Usuário</a>
+            <a href="usuarioApagar.html">Apagar Usuário</a>
+            <a href="compraCadastrar.html">Cadastrar Compra</a>
+            <a href="compraListar.html">Listar Compras</a>
+            <a href="compraAtualizar.html">Atualizar Compra</a>
+            <a href="compraApagar.html">Apagar Compra</a>
+        </nav>
+    </header>
+    <br><br><br>
+    <section>
+        <h2>Lista de Compras</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID Compra</th>
+                    <th>ID Usuário</th>
+                    <th>ID Produto</th>
+                    <th>Quantidade</th>
+                    <th>Data da Compra</th>
+                    <th>Preco Unitário</th>
+                    <th>Desconto Aplicado</th>
+                    <th>Preço Final</th>
+                    <th>Forma Pagamento</th>
+                    <th>Status Compra</th>
+                </tr>
+            </thead id="compras-tabela">
+            <tbody>
+                <!--Dados vem do JS-->
+            </tbody>
+        </table>
+    </section>
+    <br>
+    <button id="btn">Listar Compras</button>
+    <div id="res"></div>
+    <br><br>
+    <label for="id">ID da compra: <input type="number" id="id"></label>
+    <br><button id="listarId">Listar a Compra do ID</button>
+</body>
+</html>
